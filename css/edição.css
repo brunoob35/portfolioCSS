@@ -1,11 +1,66 @@
+/*reset dos parametros padrões do CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
-    background: #76c7fc;
-    font-family: Verdana;
+    background: #131313;
+    font-size: 1em;
     height: 100vh;
+    color: ghostwhite;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+@media (min-width: 320px) {
+    body {
+        font-size: 1em
+    }
+}
+
+h2 {
+    color: rgb(212, 17, 212);
+}
+
+
+/* Animação pisca pisca */
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+header {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    color: ghostwhite;
+}
+
+.header-div {
+    padding: 20px;
 }
 
 .menu {
-    background-color: white;
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    width: 100vw;
+    /*modificador top funciona apenas quando há uma position declarada*/
+    top: 0;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .menu li {
@@ -17,8 +72,13 @@ body {
     justify-content: space-around;
 }
 
+.menu a {
+    display: block;
+    padding: 10px 20px;
+}
+
 a {
-    color: rgb(1, 53, 88);
+    color: ghostwhite;
     text-decoration: none;
 }
 
@@ -26,20 +86,42 @@ a:hover {
     text-decoration: underline;
 }
 
-.site-subtitle,
-.siteTitle {
-    color: whitesmoke;
-    text-align: center;
-}
-
-.sobrenome {
-    color: rgb(47, 146, 97)
-}
-
-.subtitle {
-    font-style: bold;
+.site-title {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: normal;
+    text-align: center
 }
 
 .site-subtitle {
-    font-style: italic
+    text-align: right;
+}
+
+.site-subtitle,
+.siteTitle {
+    color: ghostwhite;
+}
+
+.dot {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.subtitle {
+    color: rgb(255, 255, 104);
+}
+
+.entiti {
+    color: ghostwhite
+}
+
+.classe {
+    color: rgb(78, 243, 78);
+}
+
+.equals {
+    color: rgb(212, 17, 212)
+}
+
+.site-subtitle {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: normal;
 }
