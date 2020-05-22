@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 10px;
 }
 
 body {
@@ -18,9 +18,27 @@ body {
     font-family: 'Share Tech Mono', monospace;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 400px) {
     body {
-        font-size: 1em
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 635px) {
+    .header-div {
+        font-size: 1.4em;
+    }
+    body {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        font-size: 0.8em;
+    }
+    body {
+        font-size: 1.8em;
     }
 }
 
@@ -61,6 +79,7 @@ header {
     /*modificador top funciona apenas quando há uma position declarada*/
     top: 0;
     font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5em;
 }
 
 .menu li {
@@ -89,7 +108,8 @@ a:hover {
 .site-title {
     font-family: 'Press Start 2P', cursive;
     font-weight: normal;
-    text-align: center
+    text-align: center;
+    text-size: 0.3em;
 }
 
 .site-subtitle {
@@ -124,4 +144,9 @@ a:hover {
 .site-subtitle {
     font-family: 'Share Tech Mono', monospace;
     font-weight: normal;
+}
+
+.grid,
+.about {
+    padding: 1em;
 }
